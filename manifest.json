@@ -1,0 +1,21 @@
+{
+    "name": "Miked Up",
+    "version": "1.0.1",
+    "description": "Mike is watching. Inspired by https://github.com/benhalpern/dave-coulier-chrome",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": [ "https://*.io/*", "https://*.com/*"],
+            "js": ["mike.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        "images/mike.png"
+    ],
+    "icons": {
+        "16": "images/mike16.png",
+        "32": "images/mike32.png",
+        "48": "images/mike48.png",
+        "128": "images/mike128.png"
+    }
+}
